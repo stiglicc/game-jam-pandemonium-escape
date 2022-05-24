@@ -701,10 +701,10 @@ TextureImporter:
       name: TX Tileset Ground_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 480
-        width: 32
-        height: 32
+        x: 4
+        y: 417
+        width: 88
+        height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3834,8 +3834,8 @@ TextureImporter:
         y: 480
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 1.0250051, y: 0.4637928}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
