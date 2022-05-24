@@ -25,7 +25,7 @@ public class ladderClimb : MonoBehaviour
         if (isClimbing) {
             rb.gravityScale = 0f;
             rb.velocity = new Vector2(rb.velocity.x, vertical * speed);
-        } else rb.gravityScale = 3f;
+        } else rb.gravityScale = 5f;
         
     }
     private void OnTriggerEnter2D(Collider2D collision)

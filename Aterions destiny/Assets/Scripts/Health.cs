@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -38,6 +39,12 @@ public class Health : MonoBehaviour
         if (currentHealth <= 0) {
             anima.Play("Dead");
             GetComponent<playerMovement>().enabled = false;
+            Invoke("reloadLevel",2f);
         }
+    }
+    void reloadLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 }
