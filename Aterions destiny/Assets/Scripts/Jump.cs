@@ -12,27 +12,34 @@ public class Jump : MonoBehaviour
     bool jumping;
     bool jumpCancelled;
     bool isGrounded;
+    Animator anima;
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
         if (collision.gameObject.tag == "Ground") {
             isGrounded = true;
             Debug.Log("Na zemlji");
-        } else Debug.Log("X");
+            
+        } else  Debug.Log("X"); 
     }
     private void Start()
     {
         isGrounded = true;
+        anima = GetComponent<Animator>();
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)&&isGrounded) {
-            float jumpForce = Mathf.Sqrt(jumpHeight * -2 * (Physics2D.gravity.y * rb.gravityScale));
-            rb.velocity= new Vector2(rb.velocity.x, jumpForce);
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            anima.SetBool("isJumping", true);
+            float jumpForce = Mathf.Sqrt(jumpHeight * -1.5f * (Physics2D.gravity.y * rb.gravityScale));
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             isGrounded = false;
             jumping = true;
             jumpCancelled = false;
             jumpTime = 0;
-        }
+        } else anima.SetBool("isJumping", false);
         if (jumping) {
             jumpTime += Time.deltaTime;
             if (Input.GetKeyUp(KeyCode.Space)) {

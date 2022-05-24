@@ -7,7 +7,6 @@ public class playerMovement : MonoBehaviour
     [SerializeField] float moveSpeed;
     Rigidbody2D rb;
     Animator anima;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
