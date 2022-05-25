@@ -9,6 +9,7 @@ TagManager:
   - Trap
   - Princess
   - Death
+  - Box
   layers:
   - Default
   - TransparentFX

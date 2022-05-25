@@ -5,15 +5,11 @@ using UnityEngine;
 public class Jump : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public float buttonTime = 0.5f;
-    public float jumpHeight = 5;
-    public float cancelRate = 100;
     bool isGrounded;
     Animator anima;
     public float jumpForce;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
         if (collision.gameObject.tag == "Ground") {
             isGrounded = true;
             Debug.Log("Na zemlji");     
