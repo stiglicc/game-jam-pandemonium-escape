@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
     public int damage;
+    public int death_damage;
     public int healAmount;
     Animator anima;
 
@@ -18,7 +19,12 @@ public class Health : MonoBehaviour
             currentHealth -= damage;
             Debug.Log("You took damage!");
             healthBar.SetHealth(currentHealth);
-        } 
+        }else if ( collision.gameObject.tag == "Death") { 
+            currentHealth -= death_damage;
+            Debug.Log("You took damage!");
+            healthBar.SetHealth(currentHealth);
+        }
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
