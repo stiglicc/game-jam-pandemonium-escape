@@ -10,9 +10,9 @@ public class stickCollider : MonoBehaviour
     {
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player") 
+        if (collision.gameObject.tag == "Player")
         {
             isSticked = true;
         }
@@ -23,20 +23,17 @@ public class stickCollider : MonoBehaviour
         if (isSticked){
             player.transform.position = transform.position;
         }
-
         unstick();
     }
-
-    private void unstick()
-    {
+    
+    private void unstick() {
         float moves = Input.GetAxis("Horizontal");
-        if (moves != 0)
-        {
+        if (moves != 0) {
             isSticked = false;
             player.transform.position = player.transform.position;
         }
     }
 }
-    // Update is called once per frame
+    
    
 

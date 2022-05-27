@@ -10,6 +10,7 @@ TagManager:
   - Princess
   - Death
   - Box
+  - Potion
   layers:
   - Default
   - TransparentFX

@@ -9,12 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 22fe6c1b2bb7b4a4b882976f7784704e
   - enabled: 1
-    path: Assets/Scenes/Main.unity
+    path: Assets/Scenes/Entry level.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/GameFinish.unity
-    guid: 8cad3c9253c344a4995ae518a78d3be9
+    path: Assets/Scenes/Pandemonium 1.unity
+    guid: 830b852635c7ab3408387e4b79d09bb8
   - enabled: 1
-    path: Assets/Scenes/Pandemonium.unity
-    guid: f2976182e4ec4574d9a51c5b5adb2fe6
+    path: Assets/Scenes/dungeon_red.unity
+    guid: 78dbe7346796d3e46ba7f7f8583bf5ec
+  - enabled: 1
+    path: Assets/Scenes/pandemonium_after_red.unity
+    guid: 0036211a1ff510247bb00c0cce8d12d0
+  - enabled: 1
+    path: Assets/Scenes/dungeon_purple.unity
+    guid: 2a4d0145ce54f184fb9a55881b04a106
+  - enabled: 1
+    path: Assets/Scenes/pandemonium_after_purple.unity
+    guid: f6fed97e4a46a424197ed43c622b11af
   m_configObjects: {}

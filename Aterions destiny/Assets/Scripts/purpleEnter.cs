@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class pandemoniumEnter : MonoBehaviour
+public class purpleEnter : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
-        {
-            SceneManager.LoadScene("Pandemonium 1");
+        if (collision.gameObject.tag == "Player") {
+            SceneManager.LoadScene("dungeon_purple");
+
         }
     }
     void Start()

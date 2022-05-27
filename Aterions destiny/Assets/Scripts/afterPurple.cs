@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class pandemoniumEnter : MonoBehaviour
+public class afterPurple : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("Pandemonium 1");
+            Debug.Log("collided");
+            SceneManager.LoadScene("pandemonium_after_purple");
         }
     }
+    // Start is called before the first frame update
     void Start()
     {
         
