@@ -39,6 +39,7 @@ public class Health : MonoBehaviour
         anima = GetComponent<Animator>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        healthLimit();
     }
     private void Update()
     {
@@ -52,5 +53,11 @@ public class Health : MonoBehaviour
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
+    }
+    void healthLimit()
+    {
+        if (currentHealth > maxHealth) {
+            currentHealth = maxHealth;
+        }
     }
 }

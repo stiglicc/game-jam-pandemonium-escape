@@ -8,7 +8,7 @@ public class purpleEnter : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player") {
-            SceneManager.LoadScene("dungeon_purple");
+            SceneManager.LoadScene("purpleDungeon");
 
         }
     }

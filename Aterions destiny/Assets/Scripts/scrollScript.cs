@@ -18,10 +18,11 @@ public class scrollScript : MonoBehaviour
     {
         
     }
-
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.Escape)){
+            closeUI();
+        }
     }
     public void activateUI()//scroll item open
     {

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class boxChecker : MonoBehaviour
 {
-    [SerializeField] GameObject spawnObject;
     [SerializeField] GameObject wallMove;
     
     bool isTriggered;
@@ -18,21 +17,19 @@ public class boxChecker : MonoBehaviour
     }
     void Start()
     {
-       // isSpawned = false;
+       
     }
 
     // Update is called once per frame
     void Update()
     {
         if (isTriggered)  {
-            spawnObject_();
+            move();
         }
 
     }
-    private void spawnObject_()
-    {
-        Instantiate(spawnObject, new Vector2(-19.50f, -18.50f), Quaternion.identity);       isTriggered = false;
-       // isSpawned = true;
+    private void move(){
+        wallMove.transform.Translate(new Vector2(0, -0.01f));
     }
    
 }

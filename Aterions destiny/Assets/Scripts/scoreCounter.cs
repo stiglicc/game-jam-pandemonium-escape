@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class scoreCounter : MonoBehaviour
+public class diamondCounter : MonoBehaviour
 {
     public TextMeshProUGUI counterText;
     
@@ -18,8 +18,8 @@ public class scoreCounter : MonoBehaviour
         textUpdater();
     }
     private void textUpdater() {
-        if (counterText.text != collectable.totalCoins.ToString()){
-            counterText.text = collectable.totalCoins.ToString();
+        if (counterText.text != collectable2.totalDiamonds.ToString()){
+            counterText.text = collectable2.totalDiamonds.ToString();
         }
     }
 }
