@@ -13,6 +13,7 @@ public class Health : MonoBehaviour
     public AudioClip deathSound;
     public AudioSource audioS;
     Animator anima;
+    bool isPlayed;
 
     public healthBar healthBar;
     private void OnTriggerEnter2D(Collider2D collision)
@@ -46,19 +47,24 @@ public class Health : MonoBehaviour
     private void Update()
     {
         if (currentHealth <= 0) {
-            
+            playSound();
             anima.Play("Dead");
             GetComponent<playerMovement>().enabled = false;
             Invoke("reloadLevel",2f);
         }
     }
-    void reloadLevel()
-    {
+    private void playSound() {
+        if (!audioS.isPlaying && !isPlayed){
+            audioS.PlayOneShot(deathSound);
+            isPlayed=true;
+            
+        }
+    }
+    void reloadLevel() {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
     }
-    void healthLimit()
-    {
+    void healthLimit() {
         if (currentHealth > maxHealth) {
             currentHealth = maxHealth;
         }

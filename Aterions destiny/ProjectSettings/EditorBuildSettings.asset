@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/pandemonium_after_blue.unity
     guid: 6ce922d6ac0c3674d966a3a93c2c0f60
+  - enabled: 1
+    path: Assets/Scenes/yellowDungeon.unity
+    guid: 67bd99b2fa33c524bb465b6104094a6f
   m_configObjects: {}

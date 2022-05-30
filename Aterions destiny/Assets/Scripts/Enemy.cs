@@ -17,7 +17,8 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        anima.SetBool("isHurt",true);
+        anima.SetTrigger("Hurt");
+        
         if (currentHealth <= 0) {
             Die();
         }
@@ -26,6 +27,7 @@ public class Enemy : MonoBehaviour
     {
         anima.SetBool("isDead",true);
         Debug.Log("Died");
-        Destroy(gameObject, 4f);
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
     }
 }

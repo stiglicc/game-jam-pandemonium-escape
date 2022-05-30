@@ -5,11 +5,16 @@ using UnityEngine;
 public class scrollScript : MonoBehaviour
 {
     public GameObject scroll_UI;
+    public AudioSource audioS;
+    
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player"){
             activateUI();
+            if (!audioS.isPlaying){
+                audioS.Play();
+            }
            // Destroy(gameObject);
             Debug.Log("SCROLL ACTIVATE");
         }
@@ -33,5 +38,6 @@ public class scrollScript : MonoBehaviour
         scroll_UI.SetActive(false);
         Destroy(gameObject);
         Debug.Log("SCROLL CLOSED");
+        audioS.Stop();
     }
 }

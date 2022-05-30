@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 38086
+  controlID: 125419
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 38087
+  controlID: 125424
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 38088
+  controlID: 125425
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,7 +187,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 859
+    width: 895
     height: 614
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
@@ -212,9 +212,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 859
+    x: 895
     y: 0
-    width: 607
+    width: 571
     height: 614
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 38010
+  controlID: 125448
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -347,9 +347,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 859
+    x: 895
     y: 73
-    width: 605
+    width: 569
     height: 593
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -361,7 +361,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 605, y: 572}
+  m_TargetSize: {x: 569, y: 572}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -376,8 +376,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -302.5
-    m_HBaseRangeMax: 302.5
+    m_HBaseRangeMin: -284.5
+    m_HBaseRangeMax: 284.5
     m_VBaseRangeMin: -286
     m_VBaseRangeMax: 286
     m_HAllowExceedBaseRangeMin: 1
@@ -397,23 +397,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 605
+      width: 569
       height: 572
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 302.5, y: 286}
+    m_Translation: {x: 284.5, y: 286}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -302.5
+      x: -284.5
       y: -286
-      width: 605
+      width: 569
       height: 572
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 605, y: 593}
+  m_LastWindowPixelSize: {x: 569, y: 593}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -441,7 +441,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 858
+    width: 894
     height: 593
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -666,9 +666,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -21.96926, y: 4.067764, z: 4.666465}
+    m_Target: {x: 34.45571, y: 4.2341585, z: -4.087559}
     speed: 2
-    m_Value: {x: -21.96926, y: 4.067764, z: 4.666465}
+    m_Value: {x: 34.45571, y: 4.2341585, z: -4.087559}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -719,9 +719,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 30.728128
+    m_Target: 8.872606
     speed: 2
-    m_Value: 30.728128
+    m_Value: 8.872606
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -868,23 +868,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Painted HQ 2D Forest Medieval Background/day
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Painted HQ 2D Forest Medieval Background/day
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Nikola\Desktop\GAME JAM PROJECT\game-jam-pandemonium-escape\Aterions
     destiny
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 64}
-    m_SelectedIDs: 4e7e0000
-    m_LastClickedID: 32334
-    m_ExpandedIDs: 000000009076000092760000947600009676000098760000b676000000ca9a3b
+    scrollPos: {x: 0, y: 32}
+    m_SelectedIDs: 9e760000
+    m_LastClickedID: 30366
+    m_ExpandedIDs: 00000000e2740000e4740000e874000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -912,7 +912,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000907600009276000094760000967600009876000000ca9a3b
+    m_ExpandedIDs: 00000000e2740000e4740000e874000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1026,10 +1026,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 701}
-      m_SelectedIDs: 2c56ffff
-      m_LastClickedID: -43476
-      m_ExpandedIDs: 6876ffff427affffd495ffffb4a8ffff02a9ffff7eadffffd8b8ffff1cd4ffff4ee9ffff8cf0ffff10fbffff1e72000048720000f27200000673000066890000a48a0000fc96000020eb00006cee000074ee000090ee0000b6ee0000e0ee0000f8ee0000aaf00000caf00000dcf000004cf10000
+      scrollPos: {x: 0, y: 1549}
+      m_SelectedIDs: 14dcfaff
+      m_LastClickedID: -336876
+      m_ExpandedIDs: b2edfaffa8f2faffc2f5faffa0fafaff1afcfaff60fdfaff6e00fbff8203fbff0a05fbff7a09fbff3447fbff6a4dfbff846bfbff3a74fbff9e74fbfff874fbff8275fbfff67efbff449cfbffc8b1fbffccc0fbffaac1fbff74c2fbff3a06fcff3c06fcffaa19fcffcc29fcffaa2afcff9e2bfcff382ffcfffc33fcfffa3ffcffb844fcff2e46fcff444cfcff0a5efcffac5ffcff5661fcff7266fcffec78fcfff27cfcff8491fcffaca2fcff2aa4fcff14b3feff04b7feff9ed9feffaee6feff4601ffff8e03ffff5004ffffcc0affffb20bffff9615fffffc15ffffc61affff361cffff1e24ffff2424ffff7226ffff4a28ffff122dffff8a2fffff2e35ffff1443fffff443ffff4c4dffff524dffffc84effff7a53ffff8053ffff0055ffff445cffffa85dffffc260ffffd868ffff9669ffff146bffff766cffffd26dffff366fffff9270ffff367bffff3283ffff8286ffff5088ffffd68cffff2091ffff4694ffff02b6fffffcb7ffff5ac1fffff2c5ffffcacbffffdeccffffa2cfffff10d2ffff82d4ffff86d7ffffc8d9ffff92daffff80f1ffffdaf3ffff10fbffff2a860000743a0100f83a0100384201003c430100ee87010040920100fac70100ced2010072ed0100b82b0300342d0300483f0300e44403009856030014580300186e030036a80300042a0400ae2b0400d47404005c2805003c29050056290500cc780800cc79080016d108005ed10800e4d10800c0070900a8540900147309005e7309004c740900c0750900f2750900207709003c770900627709008c770900a477090038790900487909005a7909008c7909001e2f0b006ed00b00c0e80b0044f40b001cf60b003af70b0094270c0046370c00d0380c006c3a0c00f8510c0092530c00
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
