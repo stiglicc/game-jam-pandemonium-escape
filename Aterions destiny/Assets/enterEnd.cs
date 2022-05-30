@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class enterYellow : MonoBehaviour
+public class enterEnd : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("yellowDungeon");
+            SceneManager.LoadScene("end");
         }
     }
     void Start()

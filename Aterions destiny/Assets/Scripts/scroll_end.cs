@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
-public class scrollScript : MonoBehaviour
+public class scroll_end : MonoBehaviour
 {
     public GameObject scroll_UI;
     public AudioSource audioS;
@@ -38,7 +39,7 @@ public class scrollScript : MonoBehaviour
     {
         scroll_UI.SetActive(false);
         Destroy(gameObject);
-        
+        SceneManager.LoadScene("credits");
         audioS.Stop();
         
     }

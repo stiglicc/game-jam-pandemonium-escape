@@ -11808,6 +11808,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.65243816, y: 0.1561861}
   m_EdgeRadius: 0
+--- !u!1 &1475656002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1475656003}
+  m_Layer: 0
+  m_Name: attackPoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1475656003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475656002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.793, y: 0.81, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1807712744661769410}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1484302891
 GameObject:
   m_ObjectHideFlags: 0
@@ -12120,7 +12151,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2867132, y: 1}
+    m_SensorSize: {x: 1.3986014, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -18107,6 +18138,7 @@ Transform:
   m_Children:
   - {fileID: 3004955540792733006}
   - {fileID: 3004955539990994324}
+  - {fileID: 1475656003}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18126,7 +18158,7 @@ MonoBehaviour:
   audioS: {fileID: 4984299151426366258}
   attackSound: {fileID: 8300000, guid: d51afdc91d63f5147a1a80f5e8bffd97, type: 3}
   attackPoint: {fileID: 3004955539990994324}
-  attackPoint2: {fileID: 0}
+  attackPoint2: {fileID: 1475656003}
   enemyLayers:
     serializedVersion: 2
     m_Bits: 64
