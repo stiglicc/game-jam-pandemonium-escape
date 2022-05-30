@@ -10,6 +10,8 @@ public class Health : MonoBehaviour
     public int damage;
     public int death_damage;
     public int healAmount;
+    public AudioClip deathSound;
+    public AudioSource audioS;
     Animator anima;
 
     public healthBar healthBar;
@@ -44,6 +46,7 @@ public class Health : MonoBehaviour
     private void Update()
     {
         if (currentHealth <= 0) {
+            
             anima.Play("Dead");
             GetComponent<playerMovement>().enabled = false;
             Invoke("reloadLevel",2f);

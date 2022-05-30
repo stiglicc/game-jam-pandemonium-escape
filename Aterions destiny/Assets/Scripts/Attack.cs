@@ -5,7 +5,8 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
     public Animator anima;
-
+    public AudioSource audioS;
+    public AudioClip attackSound;
     public Transform attackPoint;
     public LayerMask enemyLayers;
 
@@ -20,16 +21,15 @@ public class Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftControl))
-        {
+        if (Input.GetKey(KeyCode.LeftControl)){
             Attack_();
         }
         
     }
     private void Attack_(){
+            audioS.PlayOneShot(attackSound);
             anima.SetTrigger("Attack");
-
-            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
             foreach(Collider2D enemy in hitEnemies){
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage);

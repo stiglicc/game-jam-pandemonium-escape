@@ -30,8 +30,8 @@ public class scrollScript : MonoBehaviour
     }
     public void closeUI() //scroll item close
     {
-        Destroy(gameObject);
         scroll_UI.SetActive(false);
+        Destroy(gameObject);
         Debug.Log("SCROLL CLOSED");
     }
 }
